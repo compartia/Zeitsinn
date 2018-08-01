@@ -1,6 +1,6 @@
 # Рецепт
 
-```
+<pre>
 Струны. Браны.
 Гусли. Барабаны.
 
@@ -44,6 +44,6 @@
 
 Можно подавать!
 
-```
+</pre>
 
  [soundcloud](https://soundcloud.com/zaborskiy/recipe) — аудио
