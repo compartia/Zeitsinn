@@ -22,3 +22,7 @@
 
 - [Призрак](http://text.zaborskiy.org/ghost) 
 
+## Ранее
+
+- [Сообщение в бутылке.](http://text.zaborskiy.org/сообщение%20в%20бутылке) 
+
