@@ -1,5 +1,7 @@
 # Рецепт
 
+https://soundcloud.com/zaborskiy/recipe
+
 <pre>
 Струны. Браны.
 Гусли. Барабаны.
@@ -46,4 +48,13 @@
 
 </pre>
 
- [soundcloud](https://soundcloud.com/zaborskiy/recipe) — аудио
+### аудио:
+[soundcloud](https://soundcloud.com/zaborskiy/recipe) — аудио
+
+
+
+---
+[Артем Заборский](http://www.zaborskiy.org/), 2017     
+
+
+[Cодержание](http://text.zaborskiy.org/)
