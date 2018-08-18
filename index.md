@@ -1,13 +1,17 @@
 ## 2018
-- [Теперь](http://text.zaborskiy.org/теперь)        
+
+- [Теперь](http://text.zaborskiy.org/теперь)   
+
+- [Рудра-Тандава](http://text.zaborskiy.org/Рудра-Тандава)  
 
 ## P1
+
 - [Цайтзиннизм (Zeitsinninsm) ](http://text.zaborskiy.org/zeitsinnism)
 
-- [Об энтропии ада](http://text.zaborskiy.org/hell)   
-      
+- [Об энтропии ада](http://text.zaborskiy.org/hell)        
+
 - [О матрице](http://text.zaborskiy.org/matrix)
-  
+
 - [Cимвол времени](http://text.zaborskiy.org/symbol_of_time) 
 
 ## 2017 
