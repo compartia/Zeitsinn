@@ -1,5 +1,9 @@
 ## 2018
 
+- [Миф](http://text.zaborskiy.org/myth)   
+
+- [Lingua veneta (мечтатели)](http://text.zaborskiy.org/dreamers)   
+
 - [Теперь](http://text.zaborskiy.org/теперь)   
 
 - [Рудра-Тандава](http://text.zaborskiy.org/Рудра-Тандава)  
