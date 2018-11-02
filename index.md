@@ -1,5 +1,7 @@
 ## 2018
 
+- [Травма пустоты](http://text.zaborskiy.org/trauma)   
+
 - [Миф](http://text.zaborskiy.org/myth)   
 
 - [Lingua veneta (мечтатели)](http://text.zaborskiy.org/dreamers)   
