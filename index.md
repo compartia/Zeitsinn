@@ -1,6 +1,8 @@
 ## 2018
 
-- [Травма пустоты](http://text.zaborskiy.org/trauma)   
+- [Травма пустоты](http://text.zaborskiy.org/trauma)
+
+- [Абразивная ода](http://text.zaborskiy.org/nimb)   
 
 - [Миф](http://text.zaborskiy.org/myth)   
 
