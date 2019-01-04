@@ -28,3 +28,10 @@
 Я -- инъекция лета жар..(кого?)   
 Ты -- мечта, а не реквием.  
 
+
+
+Some text[^1].
+Some other text[^2].
+
+[^1]: Some footnote.
+[^2]: Other footnote.
