@@ -1,3 +1,12 @@
+## 2019
+
+- [Цветение](http://text.zaborskiy.org/blossom)
+
+- [Нейроэстетика](http://text.zaborskiy.org/neuroestetics)
+
+- [Corps-sans-organes](http://text.zaborskiy.org/сorps-sans-organes)
+
+
 ## 2018
 
 - [Травма пустоты](http://text.zaborskiy.org/trauma)
