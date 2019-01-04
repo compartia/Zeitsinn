@@ -1,10 +1,10 @@
 ## 2019
 
-- [Цветение](http://text.zaborskiy.org/blossom)
+- [Цветение](https://text.zaborskiy.org/blossom)
 
-- [Нейроэстетика](http://text.zaborskiy.org/neuroestetics)
+- [Нейроэстетика](https://text.zaborskiy.org/neuroestetics)
 
-- [Corps-sans-organes](http://text.zaborskiy.org/сorps-sans-organes)
+- [Corps-sans-organes](https://text.zaborskiy.org/corps-sans-organes)
 
 
 ## 2018
