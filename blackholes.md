@@ -56,9 +56,9 @@ __
 A Zaborskiy,  
 02.02.2019  
 
-[^1] https://ru.wikipedia.org/wiki/Цепь_Маркова   
-[^2] https://ru.wikipedia.org/wiki/Теорема_об_отсутствии_волос   
-[^3] https://ru.wikipedia.org/wiki/Задача_о_мятом_рубле    
-[^4] https://ru.wikipedia.org/wiki/Парадокс_Ябло    
-[^5] https://ru.wikipedia.org/wiki/Задача_о_разборчивой_невесте    
+[^1]: https://ru.wikipedia.org/wiki/Цепь_Маркова   
+[^2]: https://ru.wikipedia.org/wiki/Теорема_об_отсутствии_волос   
+[^3]: https://ru.wikipedia.org/wiki/Задача_о_мятом_рубле    
+[^4]: https://ru.wikipedia.org/wiki/Парадокс_Ябло    
+[^5]: https://ru.wikipedia.org/wiki/Задача_о_разборчивой_невесте    
 
