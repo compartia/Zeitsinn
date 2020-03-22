@@ -53,3 +53,4 @@
 
 - [Сообщение в бутылке.](http://text.zaborskiy.org/сообщение%20в%20бутылке) 
 
+- [Я жгу аватары Богини](http://text.zaborskiy.org/godness)
