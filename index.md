@@ -1,3 +1,11 @@
+## 2020
+
+- [Приплыли, Сеньорита](https://text.zaborskiy.org/seniorita)
+
+- [Фазовые переходы](https://text.zaborskiy.org/phase_transitions)
+
+- [Итальянская магия](https://text.zaborskiy.org/mafia_italic)
+
 ## 2019
 
 - [Цветение](https://text.zaborskiy.org/blossom)
@@ -47,3 +55,4 @@
 
 - [Сообщение в бутылке.](http://text.zaborskiy.org/сообщение%20в%20бутылке) 
 
+- [Я жгу аватары Богини](http://text.zaborskiy.org/godness)
