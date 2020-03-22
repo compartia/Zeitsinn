@@ -1,7 +1,8 @@
 
 #### 2020-03-18
 
- 
+![](/images/poem__1241.png)
+
 Приплыли, Сеньорита!  
 [Fondaménta degli Incurábili.](https://it.wikipedia.org/wiki/Fondamenta_degli_incurabili)  
 Ложитесь, загорайте,  
