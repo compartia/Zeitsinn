@@ -1,3 +1,9 @@
+## 2020
+
+- [Приплыли, Сеньорита](https://text.zaborskiy.org/seniorita)
+
+- [Фазовые переходы](https://text.zaborskiy.org/phase_transitions)
+
 ## 2019
 
 - [Цветение](https://text.zaborskiy.org/blossom)
