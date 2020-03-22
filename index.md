@@ -4,6 +4,8 @@
 
 - [Фазовые переходы](https://text.zaborskiy.org/phase_transitions)
 
+- [Итальянская магия](https://text.zaborskiy.org/mafia_italic)
+
 ## 2019
 
 - [Цветение](https://text.zaborskiy.org/blossom)
