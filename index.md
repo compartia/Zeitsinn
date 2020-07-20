@@ -1,5 +1,7 @@
 ## 2020
 
+- [Лестница к l'essenza](https://text.zaborskiy.org/l-essenza)
+
 - [Приплыли, Сеньорита](https://text.zaborskiy.org/seniorita)
 
 - [Фазовые переходы](https://text.zaborskiy.org/phase_transitions)
