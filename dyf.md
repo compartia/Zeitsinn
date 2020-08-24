@@ -18,11 +18,6 @@ Allow this
 and I will.
 
 
-All I sense in your thesaurus 
-is a smoking "kiss me". Please, 
-Allow this 
-and I will.
-
 Don’t you feel ...? (I know you feel it)
 Silent scream of helpless puppet
 twisted, spinning, slings are tangled,
@@ -40,14 +35,6 @@ My controllers nearly failing
 My cuirass to jettison, the probe
 To init touchdown sequence.
 Yoptaaaaa 
-
-Don’t you feel ...? (I know you feel it)
-Itch of haptics hesitating
-to enfold your grapes of toes.
-Bend of dactyls dare not.. 
-nor to grasp glissade of fortune,
-nor to touch your hand 
-of clock
 
 Don’t you feel ...? (I know you feel it)
 Weights of minutes, head is filled with,
