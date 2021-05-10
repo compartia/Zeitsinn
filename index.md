@@ -1,3 +1,7 @@
+## 2021
+
+- [Отбеливатель](https://text.zaborskiy.org/snow)
+
 ## 2020
 
 - [Лестница к l'essenza](https://text.zaborskiy.org/l-essenza)
