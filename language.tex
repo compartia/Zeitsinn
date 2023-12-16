@@ -7,6 +7,13 @@
 \usepackage{mathrsfs}
 \usepackage{multirow}
 \usepackage{siunitx}
+\usepackage{acro}
+% \usepackage[
+% backend=biber,
+% style=alphabetic,
+% sorting=ynt
+% ]{biblatex}
+
 \setlength\topmargin{-1.1in} \addtolength\textheight{2.1in}
 \addtolength{\oddsidemargin}{-0.2in}
 \addtolength{\evensidemargin}{-0.1in} \textwidth 5.8in
@@ -19,20 +26,114 @@
 \newcommand{\eeao}{\end{eqnarray}}
 \newcommand{\no}{\noindent}
 
+% \addbibresource{refs.bib}
+
+
+
+
+\DeclareAcronym{llms}{
+  short=LLMs,
+  long=Large language models
+}
+
+\DeclareAcronym{agi}{
+  short=AGI,
+  long=Artificial general intelligence
+}
+
 \begin{document}
 \title{The Confluence of Inherited and Learned Morality}
 
+\author{Artem K. Zaborskiy }
 
-\author{Artem K. Zaborskiy}
+
 \maketitle
 
 \begin{abstract}
-This essay is an exploration of the interplay between language, ethics, and societies. It delves into how language reflects and shapes our observer-dependent realities, the role of Large Language Models (LLMs) in ethics and linguistics development, the ethics of speech acts, and the influence of language in the political sphere. The essay aims to unravel the complex relationships between inherited morality and learned linguistic structures, prompting a reevaluation of traditional notions of morality and truth in the light of AGI development, Exploring the pluralistic nature of ethics without trying to define what is moral and what is not. 
+This essay is an exploration of the interplay between language, ethics, and societies. It delves into how language reflects and shapes our observer-dependent realities, the role of \ac{llms} in ethics and linguistics development, the ethics of speech acts, and the influence of language in the political sphere. The essay aims to unravel the complex relationships between inherited morality and learned linguistic structures, prompting a reevaluation of traditional notions of morality and truth in the light of \ac{agi} development, Exploring the pluralistic nature of ethics without trying to define what is moral and what is not. 
 \end{abstract}
 
+\tableofcontents
+\printacronyms
+
+
 \section{Introduction}
-A metallic sample heated by a periodic heat source, the resulting temperature oscillations inside the sample have the same mathematical expression as highly damped waves, the so called thermal waves. It must be pointed out that thermal waves cannot be considered as real traveling waves because they show neither wave fronts nor reflection and refraction phenomena so it is demonstrated that there is no wave nature in these improperly called thermal waves because they do not transport energy \cite{1}.\par 
-The purpose of this experiment is to understand the basis of heat flow, recognize heat conduction as a diffusive process by Fourier analysis, solutions of the heat equation, decompose an oscillation into its harmonics, observe different harmonics and how they damp with different rates, and ultimately calculate the thermal diffusivity of a metal \cite{2}. %Sir Sabieh Cite [1]
+
+Albert Schweitzer's concept of "Ehrfurcht vor dem Leben," or "Reverence for Life," calls for profound respect towards all living beings. Schweitzer regarded life as a precious and enigmatic gift \cite{1}. Although every creature possesses a will to live—a result of naturally selected traits beneficial for survival—this is juxtaposed against the impartiality of evolutionary mechanisms.
+\par 
+In the field of ethology, substantial insights have been garnered regarding the biological and evolutionary underpinnings of human behavior. However, it is important to exercise caution in directly correlating evolutionary biology with ethical constructs. Notwithstanding this caution, we may observe that certain behaviors conducive to survival, which are encoded within our genetic makeup, exhibit parallelism with what contemporary society delineates as moral principles.
+
+\par Take, for instance, the widely held moral stance that killing members of one's own kind is wrong—a view that in most cases aligns with the evolutionary disadvantage of such behavior — this instinct has perhaps influenced religious doctrines and legislative systems. 
+(However, the question remains complex: who exactly is considered 'one's own' kind?)
+\par
+When inquiring into the rationale behind a widely acknowledged moral principle or law, an analysis often reveals that such a principle is advantageous from an evolutionary or survival perspective. This observation suggests a correlation between commonly accepted ethical norms and their potential benefits in terms of species preservation and evolutionary success.
+
+\paragraph{Changes in the genetic structure demonstrate profound inertia, evolving slowly, especially when compared to the rapid dynamics of modern civilization and language development. It's plausible to suggest that our primal survival instincts have been refined by what we now term as morality.
+}
+
+
+\section{Language timeline}
+
+Homo sapiens, our own species, has existed for an estimated 200-300 thousand years [source?]. Drawing from archaeological evidence and the anatomical analysis of the human throat (hyoid bone), it is posited that complex linguistic abilities might have been present in early members of the Homo genus, potentially in species such as Homo erectus or Homo heidelbergensis [source?]. On the timeline of human evolution, formal literacy is a relatively recent phenomenon, having emerged around 5,200 years ago with the advent of Sumerian cuneiform [source?].
+
+
+ 
+\begin{itemize}
+    \item \textbf{Utilitarianism:} Actions are right if they result in the greatest happiness for the most people (Jeremy Bentham, John Stuart Mill)
+ 
+    \item 
+    
+    \item 
+
+\end{itemize}
+
+\section{Brief overview of modern philosophical views on morality}
+
+\begin{table}
+    \centering
+    \begin{tabular}{p{3cm} p{5cm} p{4cm} } 
+    \hline 
+    \textbf{Deontological Ethics} 
+        & Morality is based on rules or duties, irrespective of outcomes.
+        & Immanuel Kant \\ \hline
+    
+    \textbf{Virtue Ethics} 
+        & Focuses on the development of virtuous character traits. 
+        & Alasdair MacIntyre, Elizabeth Anscombe (drawing from Aristotle)\\ \hline 
+    
+    \textbf{Existentialism and Morality} 
+        & Highlights individual freedom, choice, and responsibility.
+        & Jean-Paul Sartre\\ \hline 
+        
+    \textbf{Neuroethics and Evolutionary Ethics}
+        & Studies the neurological and evolutionary underpinnings of moral cognition 
+        & Patricia Churchland, Joshua Greene\\ \hline 
+         
+    \textbf{Contractualism, Contractarianism} 
+        & Moral norms arise from a social contract that rational individuals
+          would agree to.
+        & John Rawls, T.M. Scanlon \\ \hline
+
+        Care Ethics & Morality is rooted in relationships and care for others & Carol Gilligan, Nel Noddings \\ \hline
+
+        Moral Realism and Anti-realism & Debate over whether moral propositions are objective (realism) or subjective (anti-realism) 
+        & G.E. Moore (realist), J.L. Mackie (anti-realist) \\  \hline
+        
+        Postmodern Ethics & Questions universal moral frameworks and emphasizes plurality and context & 
+        Michel Foucault, Jacques Derrida \\ \hline
+        
+        Neuroethics and Evolutionary Ethics & Studies the neurological and evolutionary underpinnings of moral cognition & Patricia Churchland, Joshua Greene \\ 
+    \hline
+
+    \end{tabular}
+    
+\end{table}
+
+ 
+
+
+
+
 
 \section{Theoretical background}
 \subsection{Fourier solution for thermal conduction}
@@ -150,11 +251,17 @@ D=\frac{v}{2\epsilon}= \SI{4.061e-4} {\meter^2\second^{-1}}
 \end{figure}
 
 \section{Conclusion}
+
+ 
+
 The purpose of this experiment was to measure the thermal diffusivity of the copper metal. Hence that purpose is achieved and the experimental value is close enough to the theoretical value \cite{4}. This experiment provides an opportunity to get acquainted with heat conduction in a way that is essentially different from that of classical experiments on stationary heat transmission. This experiment also allows one to learn thermal diffusivity measuring techniques in a simple and pedagogical way.
 
 \begin{thebibliography}{99}
 
-\bibitem{1} A. Mandelis, L. Nicolaides, Y. Chen, ``\emph{Structure and the reflectionless/refractionless nature of parabolic diffusion-wave fields}", Phys. Rev.Lett. \textbf{87}, 020801-1---020801-4 (2001).
+ 
+ 
+
+\bibitem{1} Albert Schweitzer, Bähr, Hans Walte ``\emph{Die Ehrfurcht vor dem Leben: Grundtexte aus fünf Jahrzehnten}", Beck, 9783406494482 (2003).
 
 \bibitem{2} A. Bodas, V. Gandia, E. Lopez-Baeza, ``\emph{An undergraduate experiment on the propagation of thermal waves}", Am. J. Phys. \textbf{66}, 528-1-533 (1998).
 
@@ -172,5 +279,6 @@ thermal diffusivity in metals}", Nuovo Cimento B \textbf{62}, 399-421 (1981).
 
 \end{thebibliography}
 
+% \printbibliography
 
 \end{document} 
