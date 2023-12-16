@@ -1,0 +1,176 @@
+\documentclass[12pt,a4]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{graphicx}% use this package if an eps figure is included.
+\usepackage{mathrsfs}
+\usepackage{multirow}
+\usepackage{siunitx}
+\setlength\topmargin{-1.1in} \addtolength\textheight{2.1in}
+\addtolength{\oddsidemargin}{-0.2in}
+\addtolength{\evensidemargin}{-0.1in} \textwidth 5.8in
+\newcounter{questioncounter}
+\newcounter{equestioncounter}
+\setlength\parskip{10pt} \setlength\parindent{0in}
+\newcommand{\bea}{\begin{eqnarray*}}
+\newcommand{\eea}{\end{eqnarray*}}
+\newcommand{\beao}{\begin{eqnarray}}
+\newcommand{\eeao}{\end{eqnarray}}
+\newcommand{\no}{\noindent}
+
+\begin{document}
+\title{The Confluence of Inherited and Learned Morality}
+
+
+\author{Artem K. Zaborskiy}
+\maketitle
+
+\begin{abstract}
+This essay is an exploration of the interplay between language, ethics, and societies. It delves into how language reflects and shapes our observer-dependent realities, the role of Large Language Models (LLMs) in ethics and linguistics development, the ethics of speech acts, and the influence of language in the political sphere. The essay aims to unravel the complex relationships between inherited morality and learned linguistic structures, prompting a reevaluation of traditional notions of morality and truth in the light of AGI development, Exploring the pluralistic nature of ethics without trying to define what is moral and what is not. 
+\end{abstract}
+
+\section{Introduction}
+A metallic sample heated by a periodic heat source, the resulting temperature oscillations inside the sample have the same mathematical expression as highly damped waves, the so called thermal waves. It must be pointed out that thermal waves cannot be considered as real traveling waves because they show neither wave fronts nor reflection and refraction phenomena so it is demonstrated that there is no wave nature in these improperly called thermal waves because they do not transport energy \cite{1}.\par 
+The purpose of this experiment is to understand the basis of heat flow, recognize heat conduction as a diffusive process by Fourier analysis, solutions of the heat equation, decompose an oscillation into its harmonics, observe different harmonics and how they damp with different rates, and ultimately calculate the thermal diffusivity of a metal \cite{2}. %Sir Sabieh Cite [1]
+
+\section{Theoretical background}
+\subsection{Fourier solution for thermal conduction}
+% The law of heat conduction, also known as Fourier's law, states that the time rate of heat transfer through a material is proportional to the negative gradient in the temperature and to the area, at right angles to that gradient, through which the heat flows.
+% \begin{equation}
+% \vec{q}=-{\kappa}\vec{\nabla}T \, , \label{eq1}
+% \end{equation}
+% where (including the SI units), $\vec{q}$ is the local heat flux density (W.m$^{-2}$), $\kappa$ is the material's conductivity (W.m$^{-1}$K$^{-1}$) and $\vec{\nabla}T$ is the temperature gradient (K.m$^{-1}$).
+
+% Eq. $\ref{eq1}$ together with the law of energy conservation leads to the one dimensional parabolic heat diffusion equation, which in the absence of internal heat sources is written as
+% \begin{equation}
+% \frac{\partial^2 T}{\partial x^2} T-\frac{1}{D} \frac{\partial T}{\partial t}=0 \, ,\label{eq2}
+% \end{equation}
+% where $D=\kappa/\sigma \rho$ is called the diffusivity of the material and the $\sigma$ is the per unit mass heat capacity. The solutions to the heat equation are broadly described in copious textbooks and analytic solutions exist for special cases. 
+The special case relevant to our problem is one-dimensional heat conduction through temporally periodic boundary conditions. Given the periodic nature of the heating function, the solution in the form of a Fourier series:
+% \begin{align}
+% \nonumber T(x,t)=j_0(x)+\sum_{n=1,2,...}^{\infty}j_n(x)\cos(\omega_nt-\varepsilon_n) \\
+%       =j_0(x)+\sum_{n=1,2,...}^{\infty}j_n(x) R\lbrace {e^{\iota(\omega_nt-\varepsilon_n)}}\rbrace \, , \label{eq3}
+% \end{align}
+% where the symbol $R\lbrace...\rbrace$ represents the real part of the function. Here, the $j_n$'s are the (position dependent) Fourier coefficients, $\omega_n=n\omega_1$ are the Fourier frequencies, and $\varepsilon_n$ are phase factors. Note that the position dependence is contained entirely in the Fourier coefficients and is separate from the time-dependent exponentials. The zero-frequency term $j_0(x)$ represents the mean temperature \cite{4}.
+
+% Hence, a possible solution to the heat equation for one-dimensional problem is
+% \begin{align}
+% T(x,t)=(P_1x+P_0)+\sum_{n=1,2,...}^{\infty}B_n \exp\Bigg(-\sqrt{\frac{n\omega_1}{2D}}x\Bigg)\exp\Bigg[\iota\Bigg(n\omega_1t-\sqrt{\frac{n\omega_1}{2D}}x - \varepsilon_n\Bigg)\Bigg] \, , \label{eq4}
+% \end{align}
+% where $P_0$, $P_1$, $A_n$, $B_n$ are the constants which are determined from the boundary conditions, which are measured and extracted from the experiment itself. All of the constants except $P_1$ can be determined from the temperature oscillation at the location of the first thermocouple(x=0). Later, $P_1$ can be found by measuring the average temperature at any other location within the domain of experimental observation. Hence, the solution for this experiment is
+\begin{equation}
+T(x,t)=P_1x+\Big<T(0)\Big>-{\frac{4{\Delta}T}{\pi^2}}\sum_{n=1,3,5,...}^{\infty}\frac{1}{n^2}e^{-x/d_n}\cos\Bigg(n\omega_1t-\frac{x}{d_n} \Bigg)\, , \label{eq5}
+\end{equation}
+where $d_n=\sqrt\frac{2D}{\omega_n}$ are ``damping lengths" and $P_1$ is the gradient of the average temperatures. The oscillatory component of the above solution is a periodic function comprising the pulsing frequency $\omega_1$ and only its odd multiples ($\omega_3=3\omega_1$, $\omega_5=5\omega_1$, $\omega_7=7\omega_1$, etc.). The damping lengths $d_n=\sqrt\frac{2D}{\omega_n}$ are mathematically similar to the skin depth and represent the distance over which the amplitude of each harmonic decreases to $1/e$ of its value at $x=0$. As $d_n\propto1/\sqrt{n}$, the higher harmonics damp away at smaller distances; ultimately, only the fundamental frequency will survive far from the heat source.
+
+\section{Experimental procedure}
+
+
+Fig. $\ref{fig1}$ shows the experimental setup. Four K-type thermocouples were clenched equidistantly to a rod of copper of length about $0.5$ m and diameter $30$ mm. The metallic rod was heated by a square pulse using a $25$ W cartridge heater at a rate of $5$ mHz. The heater was connected to a switching circuit which was controlled by using a Labview program which sends a square pulse to the relay.
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[scale=0.4]{SchemeticDiagram.eps}\\
+\caption{Schematic diagram of the experimental setup. } \label{fig1}
+\end{center}
+\end{figure}
+The thermocouples are first calibrated using Stein-Hart Calibration. DAQ card is attached to collect the data from thermocouple and plot the predicted temperature values as a function of time.The process of heating was continued until the dynamic equilibrium had been achieved after the initiation of the setup. \\ Once the dynamic equilibrium had been achieved, Fast Fourier Transform (FFT) was performed on the finely sampled numerical data sets and then was plotted. The odd harmonics were seen by FFT graphs.
+With the help of Fourier Transformed graph, the amplitudes of temperature oscillations (in a dynamic equilibrium) of the first thermocouple (TC$1$) and the fourth thermocouple (TC$4$) were measured. With the help of those, the damping coefficient and the velocity of thermal wave  was calculated.
+Once the damping coefficient and velocity of the thermal wave had been calculated, the thermal diffusivity ``$D$" was calculated by $D=v/2\epsilon$. Here ``$\epsilon$" represents the damping coefficient.
+
+
+\section{Results}
+Fig. $\ref{fig2}$ shows that the amplitude of the oscillations decreases with the distance far from the origin. This also illustrates that these oscillations are not in phase; there is a phase lag between successive thermocouples. The triangular shape arises out of the choice of actuation frequency and the distance of the first thermocouple from the heater surface. At first thermocouple, there is not fluctuation in the frequency (maximum amplitude) that is why there occurs triangular variation. At the thermocouple which is farthest from the heat source, the temperature fluctuation (much smaller in amplitude) is nearly a perfect sinusoidal.
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[scale=0.4]{AllTCs.eps}\\
+\caption{Temperature oscillations at different points along the copper bar. The thermocouples which are nearer to the heat source have higher average temperatures. } \label{fig2}
+\end{center}
+\end{figure}
+
+Now by looking at the Fig. $\ref{fig3}$ the thermocouples which are closer to the heat source have the larger amplitudes as compared to the thermocouples which are farther away from the heater. It also shows that there occur only odd harmonics. There are only three odd harmonics which decay exponentially.
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[scale=0.4]{AllFFts.eps}\\
+\caption{Fourier transforms of the temperatures measured by the thermocouples. } \label{fig3}
+\end{center}
+\end{figure}
+\newpage
+In order to calculate the diffusivity of the material, damping coefficient $\epsilon$ has to be calculated by using following expression
+\begin{equation}
+\epsilon=\frac{1}{\Delta x}\ln(\frac{A_1}{A_2}) \, , \label{eq6}
+\end{equation} 
+where $A_1$ and $A_2$ are the respective amplitudes of the first and the fourth thermocouple's oscillations and $\Delta x$ represents the separation distance between them which is $0.06$ m in this experiment. The values of the amplitudes and the phase lag has been taken from the Fig. $\ref{fig4}$ and tabulated in the Table $\ref{tb1}$ and Table $\ref{tb2}$ respectively.
+
+\begin{table}[!h]
+\caption{Amplitudes of the oscillations of $1$st and $4$th thermocouple.} \label{tb1}
+
+\centering
+
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+   & Lower amplitude (L$_1$) & Higher amplitude (L$_2$) & Difference (L$_2$-L$_1$)\\ 
+ \hline
+ A$_1$ & 49.81 & 54.77 & 4.96\\ 
+ \hline
+ A$_2$ & 48.93 & 51.92 & 2.99\\
+ \hline
+
+\end{tabular}
+
+\end{table}
+\begin{table}[!h]
+\caption{Phase lag between $1$st and the $4$th thermocouple.} \label{tb2}
+
+\centering
+
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+   $1$st thermocouple phase (t$_1$) & $4$th thermocouple phase (t$_2$) & $\Delta t$(s)\\ 
+ \hline
+  6034 & 6042 & 8\\ 
+ 
+ \hline
+\end{tabular}
+\end{table}
+Now from the Eq. $\ref{eq6}$, the damping coefficient ($\epsilon$) is $9.235$ m$^{-1}$. With the help of phase lag ($\Delta t$), the wave velocity has been calculated by $v=\Delta x/\Delta t$ and that is $0.0075$ ms$^{-1}$.
+
+Hence, the thermal diffusivity is calculated by following expression
+\begin{equation}
+D=\frac{v}{2\epsilon}= \SI{4.061e-4} {\meter^2\second^{-1}} 
+\end{equation}
+
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[scale=0.4]{F3.eps}\\
+\caption{Fourier transforms of the temperatures measured by the thermocouples. } \label{fig4}
+\end{center}
+\end{figure}
+
+\section{Conclusion}
+The purpose of this experiment was to measure the thermal diffusivity of the copper metal. Hence that purpose is achieved and the experimental value is close enough to the theoretical value \cite{4}. This experiment provides an opportunity to get acquainted with heat conduction in a way that is essentially different from that of classical experiments on stationary heat transmission. This experiment also allows one to learn thermal diffusivity measuring techniques in a simple and pedagogical way.
+
+\begin{thebibliography}{99}
+
+\bibitem{1} A. Mandelis, L. Nicolaides, Y. Chen, ``\emph{Structure and the reflectionless/refractionless nature of parabolic diffusion-wave fields}", Phys. Rev.Lett. \textbf{87}, 020801-1---020801-4 (2001).
+
+\bibitem{2} A. Bodas, V. Gandia, E. Lopez-Baeza, ``\emph{An undergraduate experiment on the propagation of thermal waves}", Am. J. Phys. \textbf{66}, 528-1-533 (1998).
+
+\bibitem{3} L. Verdini and A. Santucci, ``\emph{Propagation properties of thermal waves and
+thermal diffusivity in metals}", Nuovo Cimento B \textbf{62}, 399-421 (1981).
+
+
+\bibitem{4} M. S. Anwar, J. Alam, M. Wasif, R. Ullah, S. Shamim, W. Zia, ``\emph{Fourier analysis of thermal diffusive waves}", J. Phy \textbf{82}, 928 (2014).
+
+\bibitem{5} George B. Arfken, Hans J. Weber, ``\emph{Mathematical methods for physicists}", 6th Ed, Chapter 14.
+
+\bibitem{6} K. Etori, ``\emph{Remarks on the temperature propagation and the thermal diffusivity of a solid}", Jpn. J. Appl. Phys. \textbf{11}, 955-957 (1972).
+
+%\bibitem{5} A. Mandelis, ``\emph{Diffusion waves and their uses}", Phys. Today \textbf{66}, 29-34 (2000).
+
+\end{thebibliography}
+
+
+\end{document} 
