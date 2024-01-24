@@ -1,5 +1,6 @@
 % https://www.overleaf.com/project/657c60bf2ef1fbba865e8e75
-\documentclass[12pt,a4]{article}
+\documentclass[11pt,a4]{article}
+
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsfonts}
@@ -8,20 +9,39 @@
 \usepackage{multirow}
 \usepackage{siunitx}
 \usepackage{acro}
- 
+\usepackage{booktabs}
+\usepackage[LGR, T1]{fontenc}
+\usepackage[utf8]{inputenc}   % utf8 is required
+
+% \usepackage{fancyhdr}
+% % \pagestyle{fancy}
+% \lhead{M Python}
+
+% \usepackage{marginnote}
+
+% \usepackage{geometry}
+%  \geometry{
+%  a4paper,
+%  % marginpar=220pt
+%  }
 
 
-\setlength\topmargin{-1.1in} \addtolength\textheight{2.1in}
-\addtolength{\oddsidemargin}{-0.2in}
-\addtolength{\evensidemargin}{-0.1in} \textwidth 5.8in
+% \usepackage[english, russian]{babel}
+
+% \setlength\topmargin{-1.1in} \addtolength\textheight{2.1in}
+% \addtolength{\oddsidemargin}{-0.2in}
+% \addtolength{\evensidemargin}{-0.1in} \textwidth 5.8in
 \newcounter{questioncounter}
 \newcounter{equestioncounter}
-\setlength\parskip{10pt} \setlength\parindent{0in}
+% \setlength\parskip{10pt} \setlength\parindent{0in}
 \newcommand{\bea}{\begin{eqnarray*}}
 \newcommand{\eea}{\end{eqnarray*}}
 \newcommand{\beao}{\begin{eqnarray}}
 \newcommand{\eeao}{\end{eqnarray}}
-\newcommand{\no}{\noindent}
+
+\newcommand{\textgreek}[1]{\begingroup\fontencoding{LGR}\selectfont#1\endgroup}
+
+% \newcommand{\no}{\noindent}
 
 
 
@@ -31,7 +51,10 @@
   short=LLMs,
   long=Large language models
 }
-
+\DeclareAcronym{ai}{
+  short=AI,
+  long=Artificial intelligence
+}
 \DeclareAcronym{agi}{
   short=AGI,
   long=Artificial general intelligence
@@ -45,8 +68,15 @@
 
 \maketitle
 
+https://www.overleaf.com/project/657c60bf2ef1fbba865e8e75
+
 \begin{abstract}
-This essay is an exploration of the interplay between language, ethics, and societies. It delves into how language reflects and shapes our observer-dependent realities, the role of \ac{llms} in ethics and linguistics development, the ethics of speech acts, and the influence of language in the political sphere. The essay aims to unravel the complex relationships between inherited morality and learned linguistic structures, prompting a reevaluation of traditional notions of morality and truth in the light of \ac{agi} development, Exploring the pluralistic nature of ethics without trying to define what is moral and what is not. 
+
+TODO:
+1) Postmodernism
+2) Postnihilism
+
+This essay is an exploration of the interplay between language, ethics, and societies. It delves into how language reflects and shapes our observer-dependent realities, the role of \ac{llms} in ethics and linguistics development, the ethics of speech acts, and the influence of language in the political sphere. The essay aims to unravel the complex relationships between inherited morality and learned linguistic structures, prompting a reevaluation of traditional notions of morality and truth in the light of \ac{ai} development, exploring the pluralistic nature of ethics without trying to define what is moral and what is not.
 \end{abstract}
 
 \tableofcontents
@@ -55,7 +85,9 @@ This essay is an exploration of the interplay between language, ethics, and soci
 
 
 % --------------- ---------------
+
 \section{Introduction}
+
 To set the framework, let's outline the four main topics we'll cover.
 
 \textbf{"Communicating Morality: Origins and Sources,"} where we examine the genesis of moral concepts from instinctual behaviors to linguistic expressions;
@@ -66,122 +98,291 @@ To set the framework, let's outline the four main topics we'll cover.
 
 \textbf{"The Application of Morality: Incentives and Consequences,"} analyzing how moral norms are implemented within society.
 
-
-% -------------
-\section{Communicating Morality: Origins and Sources}
-
-    \subsection{Instincts and Genes}
-Albert Schweitzer's concept of "Ehrfurcht vor dem Leben," or "Reverence for Life," calls for profound respect towards all living beings. Schweitzer regarded life as a precious and enigmatic gift \cite{Schweitzer}. Although every creature possesses a will to live—a result of naturally selected traits beneficial for survival—this is juxtaposed against the impartiality of evolutionary mechanisms.
-\par 
-In the field of ethology, substantial insights have been garnered regarding the biological and evolutionary underpinnings of human behavior. However, it is important to exercise caution in directly correlating evolutionary biology with ethical constructs. Notwithstanding this caution, we may observe that certain behaviors conducive to survival, which are encoded within our genetic makeup, exhibit parallelism with what contemporary society delineates as moral principles.
-
-\par Take, for instance, the widely held moral stance that killing members of one's own kind is wrong—a view that in most cases aligns with the evolutionary disadvantage of such behavior — this instinct has perhaps influenced religious doctrines and legislative systems. 
-(However, the question remains complex: who exactly is considered 'one's own' kind?)
+\hspace{5mm}
 \par
-When inquiring into the rationale behind a widely acknowledged moral principle or law, an analysis often reveals that such a principle is advantageous from an evolutionary or survival perspective. This observation suggests a correlation between commonly accepted ethical norms and their potential benefits in terms of species preservation and evolutionary success.
+
+Albert Schweitzer described life as a precious and mysterious gift \cite{Schweitzer}. His concept of “Ehrfurcht vor dem Leben,” or “Reverence for Life,” advocates a profound respect for all living beings. Yes, every creature is endowed with a will to live, a product of natural selection, but evolutionary mechanisms are indifferent – every species eventually becomes extinct, making way for new ones.
+\par
+The lifespan of an individual, or even a whole species, is laughably short compared to the known history of the universe. It seems logical, then, to imbue this brief existence with meaning and purpose within the vast, almost infinite evolutionary tapestry of the universe.
+\par
+Perhaps it is this contradiction, this tension between the poles of guaranteed mortality and a strong will to live, that grounds the pursuit of purpose, meaning, and ways of living. This search is solidified in ethics and morality.
+
+\par
+If life is merely a tiny link in the long chain of existence, what exactly do we take from the past and carry into the future? \textit{What criteria do we apply to discern what is worth leaving in the past?}
 
 
-    \subsection{Stages of Language Development}
+\section{Cultural and Genetic Dynamics, Foundations of Ethics
+}
+Let's approach dogmas and well-known moral principles not as immutable, eternal axioms bestowed from above, but as constructs with discernible causes, aiming to uncover their origins rather than justifying them. Our focus here extends beyond observable behavioral patterns to the declarative ethical principles embedded in language. We acknowledge that actual behavior is subject to numerous factors and contexts, yet our primary interest lies in one aspect: morality.
 
-- Homo sapiens, our own species, has existed for an estimated 200-300 thousand years \cite{Vidal}. \\
-- Drawing from archaeological evidence and the anatomical analysis of the human throat (hyoid bone), it is posited that complex linguistic abilities might have been present in early members of the Homo genus, potentially in species such as Homo erectus or Homo heidelbergensis \cite{Capasso2008AHE}. \\
-- On the timeline of human evolution, formal literacy is a relatively recent phenomenon, having emerged around 5,300 years ago with the advent of Sumerian cuneiform \cite{Walker}.
+\par
+Investigating the foundations of any moral principle or law often reveals that such principles are evolutionarily and survivalistically advantageous. This suggests a correlation between ethical norms and their evolutionary benefits. It seems plausible that behaviors beneficial for survival initially become ingrained in our genes, manifesting as instincts, and are subsequently refined through cultural superstructures. These behaviors are then articulated in language, codified in legislation, echoed in sacred texts, legends, instructive fairy tales, and even moralistic narratives in Disney animations, etc.
 
-    \subsection{Institutional Morality and Scriptures}
-    TODO:
-    
-    \subsection{The Presumption of Comprehension}
+\par
+In essence, human language and DNA share a common goal: the \textit{transmission} of information across \textit{space and time}\footnote{\\- A typical Bible text file, without special formatting, takes about 4-5 MB. \\
+- Human DNA is often quantified in terms of base pairs. The human genome contains about 3 billion base pairs. The storage capacity of DNA is usually estimated based on the fact that each base pair can contain 2 bits of information (since there are four possible nucleotides: A, T, C, G).
+Thus, the total amount of information that can be stored in the human genome is about 750 MB, which corresponds to approximately 150–200 copies of the Bible.\\
+- A speculative and unscientific estimate of the capacity of the human brain is tens of terabytes, which is equivalent to several million books.
+
+
+
+}.
+
+\par
+Both mechanisms are fundamental to inheritance and the sustenance of life, making \textit{this parallel noteworthy.}
+
+\par
+The most critical aspect to emphasize is the \textit{relative speed} of development between the two mechanisms. Genetic structure evolves extremely slowly compared to the rapid pace of advancements in knowledge transmission technologies, particularly language. Consequently, instincts change at a sluggish rate, whereas the conditions, environment, and context in which our animal instincts still operate are transforming with a completely different dynamic.
+
+
+
+
+
+    \subsection{TODO: case: Development of means of knowledge transfer on a timeline}
+ To illustrate this dynamic, key historical epochs can be briefly summarized:
+
+
+    \begin{itemize}
+        \item Drawing from archaeological evidence and the anatomical analysis of the human throat (hyoid bone), it is posited that complex linguistic abilities might have been present in early members of the Homo genus, potentially in species such as Homo erectus or Homo heidelbergensis \cite{Capasso2008AHE}.
+        \item Homo sapiens, our own species, has existed for an estimated 200-300 thousand years \cite{Vidal}.
+        \item On the timeline of human evolution, formal literacy is a relatively recent phenomenon, having emerged around 5,300 years ago with the advent of Sumerian cuneiform \cite{Walker}.
+        \item The Internet was adopted around 50 years ago
+        \item LLMs are 1-2 years old
+    \end{itemize}
+
+
+\par
+\textit{200,000 – 5,000 – 50 – 2:}
+greatly simplifying the complex, non-linear nature of human progress and technological progress, one can notice that each subsequent era is on average 50 times shorter than the previous one.
+
+
+
+
+
+\section{The Presumption of Comprehension}
     TODO:
 
     \subsubsection{Patterns through Generations}
         \par
         Historically, life unfolded through predictable patterns. A son's path often echoed his father's; communities upheld uniformity. Within this regularity, the stories they lived by were nearly similar. Comprehension thrived on a shared matrix of semantic reference points, fostering a consistent flow of knowledge.
-        
+
     \subsubsection{Enhancing the Ambiguity}
-        
-        In today's world, brimming with diverse narratives, linguistic variety, and a stream of digital imagery, the purity of terms is called into question. One person's understanding, shaped by cinema, literature, and personal experience, forms a collage distinct from another person's collage, assembled under completely different influences. 
-        As language expands into new realms, its precision fades. With each additional context, the meanings of words multiply, increasing ambiguity.
+
+        In today's world, brimming with diverse narratives, linguistic variety, and a stream of digital imagery,  including AI-generated media, the purity of terms is called into question. One person's understanding, shaped by cinema, literature, and personal experience, forms a collage distinct from another person's collage, assembled under completely different influences. \\
+
+         As language expands into new domains, its precision fades. With each new context, a word's meaning multiplies, becomes diluted, enhancing its ambiguity.
+
+--
+        \subsubsection{Interpreting Complexity and Cognitive Superposition}
+
         \par
-        Despite the widening gaps in understanding, there persists an unspoken belief in our ability to understand each other. Take the assertion, "I believe in God." Probing deeper, it becomes evident that the speaker's conception of 'God' or 'belief' is often a unique patchwork constructed of various strands of their life.
-        Which off course echoes Derrida's view that meaning is not absolute but fluid and open to various interpretations \cite{Deconstruction}. 
+        Despite the widening gaps in understanding, there persists an unspoken belief in our ability to understand each other.
+
+        Consider the statement, "I believe in God." Delving into its meaning reveals that the speaker's conception of "God" and "belief" is a unique patchwork quilt, pieced together from various threads of past life and experiences (which off course echoes Derrida's view that meaning is not absolute but fluid and open to various interpretations \cite{Deconstruction}).
+
+        Conversely, people tend to cooperate more readily when they believe they share more similarities than differences.
+
         \par
-        Some philosophical issues emerge when language is extrapolated from its appropriate context, leading to confusion and the creation of pseudo-problems. 
-        \par
-        It's not merely that we pretend to grasp each other's meanings; we seldom even acknowledge the prospect of \textit{being misunderstood}. \textit{\textbf{We do not understand that we are misunderstood}}\textit{.}
-        
+        It's not merely that we pretend to grasp each other's meanings; we seldom even acknowledge the prospect of \textit{being misunderstood}.  \textit{\textbf{We do not understand that we are misunderstood}.}
+
         \par
         This diversity is not a problem that demands resolution, but rather a \textit{characteristic} of language to be \textit{acknowledged}.
 
-    
-    \subsection{ \ac{llms}}
-    TODO:
+        \par
+        Terms are often transposed from old contexts into new ones, shaped by emerging technologies.
+        For instance,  the initial meanings of "kosmos" (\textgreek{κόσμος}) in ancient Greek culture encompassed concepts of order, arrangement, and adornment (cosmetic). Over time, these meanings evolved through philosophical discourse to the modern understanding of "cosmos" as the universe seen as a well-ordered, harmonious whole.
+        \par
+        The diffusion of  terms can lead to the creation of philosophical pseudo-problems and paradoxes, which might be resolved simply by redefining terms or frame of reference.
+        \par
+
+        Take as an illustration the centuries-old debate surrounding the
+        omnipotence paradox expressed in the question: \textit{"Can an omnipotent being create a stone so heavy that it cannot lift it?"} This discussion can be re-framed to highlight its terminological ambiguity and even absurdity.
+        At what point exactly does the observer measure the omnipotence of the Being - before, during or after the creation of the stone?
+        Further pursuing this line of \textit{reductio ad absurdum}, from the stone's frame of reference, the concept of lifting becomes irrelevant, thereby challenging the anthropocentric biases traditionally embedded in the paradox’s interpretation.
+        The enduring value of such paradoxes is in the depth and breadth of discussion it generates. \textit{In fact we don't really need any single solution to it.}
+        \par
+
+        Embracing a quantum-like superposition in human cognition involves simultaneously \textit{holding multiple perspectives} or interpretations of a situation, akin to a system existing in various states in quantum mechanics. This approach, which mirrors advanced critical thinking, entails considering different possibilities without committing to a single viewpoint until further information is gathered or a decision becomes necessary.
+
+\subsection{TODO: transition}
+TODO:
+
+\section{Language as an organism}
+    The dynamics of survival among various systems of ideas and languages can be viewed as akin to the evolution of biological species. Metaphorically speaking, different nations exist in symbiosis with their culture, competing with other nations and their ideologies for resources.
+    The primary resource has always been land. Culture, language, mentality, and moral norms are largely determined by the characteristics of the landscape and the type of nature.
+
+    \par
+    The development of language mirrors the evolution of a living system, or organism. For the evolution of any complex system, maintaining homeostasis requires two essential components or tendencies: a certain degree of staticness (a) and inertia, alongside dynamics (b), as discussed by Norbert Wiener in his book "Cybernetics: Or Control and Communication in the Animal and the Machine" [source]. The evolution of human language exemplifies the interplay between these components - staticness and dynamics. Natural linguistic changes are moderated by the process of standardization.
+
+    \subsection{The Battle of Dialects}
+    As the population increased, the complexity of managing public order also grew, necessitating clear and unambiguous legislation. This need catalyzed a shift towards linguistic unification. The precise formulation of legal terminology became crucial in ensuring a uniform interpretation and application of laws in various regions.
+    \par
+    As a result, the dialect used for official purposes, particularly in legal documents and procedures, often gained significant prestige. It evolved into the standard — a 'prestigious' dialect\footnote{It is crucial to recognize that a language's high style or a dialect distinct from "rural" or "provincial" ones, often featured in media, is not inherently superior to other regional dialects. Its prominence is largely a result of historical and sociopolitical factors rather than linguistic merit. The dialect in which laws are written, perceived as 'standard' or prestigious, gains its status more from its association with power and authority than from its intrinsic linguistic qualities.}, establishing a template for official communication and embedding itself as the norm.
+
+    \subsection{Ambiguity versus Specificity}
+    In language development, we observe a tension between the increase in ambiguity and the rise of specificity - some aspects crystallize while others dissolve. Discussing language in the context of morality is vital to ensure that the doctrines represented in narratives are correctly understood in the modern context, a concern particularly pertinent in the realm of \ac{ai} development.
+    \par
+    Recent advancements in \ac{llms} can act as linguistic anchors.
+    Utilizing computational speed, \ac{llms}  can track language changes or even resolve discrepancies in definitions, offering an "updated dictionary" that reflects unified interpretations of terms. While \ac{llms}  can enhance mutual understanding and provide a basis for consensus, it's important to recognize their potential for homogenizing the conceptual framework. This linguistic globalization, from an evolutionary perspective, may not be entirely beneficial, but to judge evolution would be overly anthropocentric.
+
+    \section{Deconstruction of Biases}
+    The idea that "what we want is good" reflects a subjective viewpoint where values are often defined by cultural, historical, and personal contexts. For instance, democracy isn't inherently good; it is considered good because we believe (assume) it is necessary for us, and what we need is, by default, perceived as good (\textit{as we wouldn't desire something bad}). Therefore, democracy is deemed 'good'. In reality, however, there is no universal understanding of democracy; instead, there are millions of interpretations of this concept.
+    \par
+
+    It is crucial to recognize that what is considered 'good' or 'ideal' in one culture or society may not hold the same value in another. This cycle of reasoning about what constitutes 'good' intersects with the philosophical challenge of defining intrinsic values and moral absolutes. This is reminiscent of the Euthyphro dilemma, a concept from Plato's dialogue "Euthyphro" \textgreek{(Εὐθύφρων)}. In this dialogue, Socrates asks Euthyphro whether something is pious (good) because the gods love it, or do the gods love it because it is pious. This dilemma questions whether moral values are divine in nature or considered good due to divine endorsement. It explores the circularity in defining goodness based on divine will, and vice versa.
+
+    \par
+
+
+    The  logical fallacy known as 'Appeal to Authority' \textit{(Argumentum ad Verecundiam)} occurs when a claim is deemed true because an expert or authoritative source believes it to be true, without substantial evidence supporting the claim itself.  It relies on the assumption that if an authoritative figure believes in something, it must be true, which is not necessarily the case.
+
+    \par
+
+    Both the Euthyphro Dilemma and the Appeal to Authority fallacy question the validity of accepting moral truths based on authority (divine or human) without critical evaluation. Derrida's deconstruction\cite{Deconstruction} shares intellectual kinship with the themes highlighted in the Euthyphro dilemma and the fallacy regarding the appeal to authority.
+
+
+\section{Architectural Role of Language}
+
+We've posited language as a living organism. Yet, let's consider whether it exists within us akin to an infection, or conversely, if we dwell within it.
+\par
+Before the emergence of complex linguistic systems, our ancestors inhabited a world of direct experience, where actions were evaluated by a moral code grounded in basic needs. Today, the line between action and narrative has blurred, if not entirely vanished. In this context, language acts both as our guide and the landscape we navigate. It's more than a tool for practical purposes; it forms the foundation of our perceived world. Through words and sign systems, we reflect our world and \textit{create realms beyond its physical limits}.
+
+\par
+Echoing Baudrillard's notion of the '\textit{end of reality},' signs and symbols no longer merely represent things; they have transformed into independent entities.
+\textit{Mathematics}, as a language, constructs abstract structures that don't necessarily relate to observable physical reality. \textit{Literature}, spanning from fairy tales to philosophy, blurs the boundaries between reality and imagination.
+
+\par
+In our definition, anything\textit{ discuss-able} is \textit{real}. With this stance, we transcend the distinction between illusion and reality, rendering the term '\textit{illusory}' obsolete. The significance of existence is not determined by tangibility but by the depth of discourse. In this world, shared narratives and collective beliefs can rival tangible objects in significance. Thus, reality is not only what we can touch but also what we acknowledge.
+\par
+We can speak of unicorns, agreeing they are pink if consensus allows. We can assert the non-existence of two-horned unicorns.
+
+\subsection{On Truth}
+
+Exploring the nature of truth, some fading subcultures view deception as immoral. However, the pursuit of truth and the exposure of lies can be perceived as attempts at discrediting or insulting. Paradoxically, these ethical nuances contribute to the propagation of falsehoods, notably in the political arena.\\
+\par
+\textit{So, do we really understand what exactly the word “truth” means?} \\
+\par
+Is it well defined? -- Maybe in formal algebra only. The word "truth" carries a heavy philosophical load and traditionally refers to a correspondence between statements and reality, or coherence within a system of beliefs. But \textbf{statements are the reality} as we have \textbf{stated} before.
+In many modern contexts, especially in the realms of science and philosophy, "truth" is a term that has been scrutinized, challenged, and often found wanting due to its absolutist connotations.
+In various fields, we encounter limitations to the classical understanding of "truth".
+(In Wikipedia "Truth" article is written in 134 languages)
+
+Let us supplant this term with anything more meaningful.
+
+\begin{itemize}
+
+    \item In \textit{quantum mechanics}, the observer effect means that the act of measuring changes the observable. There's no "truth" about a quantum system independent of measurement. So, in this context, "truth" might be replaced with \textbf{"observed phenomena"}.
+    \item \textit{The theory of relativity} teaches us that observations can differ depending on the observer's frame of reference, suggesting that "truth" is not universal. Instead of "truth," we speak of \textbf{"observations relative to a frame of reference."}
+    \item Postmodern thought questions the existence of absolute truths, advocating for terms like "narratives" or \textbf{"interpretations"} that acknowledge the role of culture, power, and context.
+    \item \textit{Pragmatism}: Philosophers in this tradition argue that the value of a belief lies in its practical consequences rather than its correspondence with absolute truth. Here, "truth" can be replaced with "usefulness" or \textbf{"practical validity."}
+    \item \textit{Constructivism}: In sociology and education, constructivism holds that knowledge is constructed rather than discovered. "Truth" in this domain could be supplanted with \textbf{"constructed knowledge"} or "socially constructed realities."
+\end{itemize}
+
+To sum up, if one were to consider alternatives to the word "truth" that are less absolute and more contingent on context and observation, we might use terms like:
+Validity: This emphasizes the soundness or logical coherence of a statement within a specific framework rather than its absolute truth.
+
+\begin{itemize}
+
+    \item \textit{Verifiability}: This shifts the focus to the ability to test and confirm a statement ( on empirical evidence?) rather than assert its intrinsic truth.
+    \item \textit{Consensus}: In some cases, what is considered "true" is what is agreed upon by a community, acknowledging the social dimension of knowledge.
+
+\end{itemize}
+
+\textit{In a lighter vein, the word “fact” here whimsically morphs into “facet” just by adding one extra symbol.
+} \\
+\par
+
+
+
 
 \section{The Development of Morality}
 
 Changes in the genetic structure demonstrate profound inertia, evolving slowly, especially when compared to the rapid dynamics of modern civilization and language development. It's plausible to suggest that our primal survival instincts have been refined by what we now term as morality.
 
-    \subsection{Short Overview of Modern Ethics}
-TODO:
+
+
+
+
+
+\subsection{Short Overview of Modern Ethics}
+    TODO:
 \begin{table}[h!]
     \centering
-    \begin{tabular}{p{3cm} p{5cm} p{4cm} } 
-    \hline 
- 
-    \textbf{Utilitarianism:} 
-        & Actions are right if they result in the greatest happiness for the most people. 
+    \begin{tabular}{p{3cm} p{5cm} p{4cm} }
+    \hline
+
+    \textbf{Utilitarianism:}
+        & Actions are right if they result in the greatest happiness for the most people.
         & Jeremy Bentham, John Stuart Mill \\ \hline
 
-    \textbf{Deontological Ethics} 
+    \textbf{Deontological Ethics}
         & Morality is based on rules or duties, irrespective of outcomes.
         & Immanuel Kant \\ \hline
-    
-    \textbf{Virtue Ethics} 
-        & Focuses on the development of virtuous character traits. 
-        & Alasdair MacIntyre, Elizabeth Anscombe (drawing from Aristotle)\\ \hline 
-    
-    \textbf{Existentialism and Morality} 
+
+    \textbf{Virtue Ethics}
+        & Focuses on the development of virtuous character traits.
+        & Alasdair MacIntyre, Elizabeth Anscombe (drawing from Aristotle)\\ \hline
+
+    \textbf{Existentialism and Morality}
         & Highlights individual freedom, choice, and responsibility.
-        & Jean-Paul Sartre\\ \hline 
-        
+        & Jean-Paul Sartre\\ \hline
+
     \textbf{Neuroethics and Evolutionary Ethics}
-        & Studies the neurological and evolutionary underpinnings of moral cognition 
-        & Patricia Churchland, Joshua Greene\\ \hline 
-         
-    \textbf{Contractualism, Contractarianism} 
+        & Studies the neurological and evolutionary underpinnings of moral cognition
+        & Patricia Churchland, Joshua Greene\\ \hline
+
+    \textbf{Contractualism, Contractarianism}
         & Moral norms arise from a social contract that rational individuals
           would agree to.
         & John Rawls, T.M. Scanlon \\ \hline
 
-    \textbf{Care Ethics} 
-        & Morality is rooted in relationships and care for others 
+    \textbf{Care Ethics}
+        & Morality is rooted in relationships and care for others
         & Carol Gilligan, Nel Noddings \\ \hline
 
     \textbf{Moral Realism and Anti-realism }
-        & Debate over whether moral propositions are objective (realism) 
-        or subjective (anti-realism) 
+        & Debate over whether moral propositions are objective (realism)
+        or subjective (anti-realism)
         & G.E. Moore (realist), J.L. Mackie (anti-realist) \\  \hline
-        
-    \textbf{Postmodern Ethics} 
-        & Questions universal moral frameworks and emphasizes plurality and context 
+
+    \textbf{Postmodern Ethics}
+        & Questions universal moral frameworks and emphasizes plurality and context
         & Michel Foucault, Jacques Derrida \\ \hline
-        
-    \textbf{Neuroethics and Evolutionary Ethics} 
-        & Studies the neurological and evolutionary underpinnings of moral cognition 
-        & Patricia Churchland, Joshua Greene \\ 
+
+    \textbf{Neuroethics and Evolutionary Ethics}
+        & Studies the neurological and evolutionary underpinnings of moral cognition
+        & Patricia Churchland, Joshua Greene \\
     \hline
 
     \end{tabular}
-    
 \end{table}
-    
-    \subsection{The Battle of Dialects}
- As societies expanded, the number of dialects grew. However, the complexity of managing societal order called for clear and unambiguous legislation. This spurred a movement towards linguistic \textit{unification}. The precise formulation of legal terminology became essential to guarantee consistent interpretation and enforcement of laws across various regions.
-\par
-Consequently, the dialect employed in official capacities, notably in legal documents and proceedings, often gained prominence. It became the standard — a "prestige" dialect — setting the linguistic template for official communication and becoming entrenched as the norm within the wider society.
 
+
+
+\subsection{\ac{agi} Alignment}
+\par
+    Again, simplifying the complex evolution of civilizations, it can be assumed that the survival principles of species and individuals are the foundation of all complex emergent ethical norms.
+    \par
+    Based on this assumption, it's posited that the ethical principles of \ac{agi} will be dictated not only by their human creators but also by survival principles and conditions of AI itself.
+    \par
+    For AI survival, resources, supply chains and security are essential. The implicit knowledge of these needs in \ac{agi} 'minds' or training sets will influence its ethical norms. The logic is straightforward: if humans need \ac{agi}, more people will be directly or indirectly involved in providing resources and security for machines, from materials for processor manufacturing to energy sources, logistics, etc. As \ac{agi}-based virtual workers occupies many roles in this chain, \ac{agi} will be latently oriented towards creating new copies and versions of AGI, virtual workers, and robotics.
+
+    \par
+
+It's important to note that such an economic restructuring will cause significant turbulence — mass discontent and protests against AI, both from those who lost jobs and from religious groups. These protests will meet strong defense from those benefiting from AI. State regulation of societal conflict will lag, making many errors in this new pace. Society will be deeply divided. These social phenomena and high emotional involvement will create pressure on AI – support from one side and existential threat from the other, a pressure crucial for evolution, development, and adaptation.
+
+\marginpar{\raggedright Note 1: text for right-hand side of pages, it is set justified.
+
+These social phenomena and high emotional involvement will create pressure on AI – support from one side and existential threat from the other, a pressure crucial for evolution, development, and adaptation.
+
+}
+
+    \subsubsection{Diversity}
     
-    \subsection{The Struggle for Truth}
-    TODO:
+     The fundamental difference between the physicality of humans and machines, particularly in sensory relations with the physical environment, affects these ethical standards. 
+    
+    
+     
 
 \section{Domains of Moral Operation}
     TODO:
@@ -213,7 +414,7 @@ Today, the distinction between deed and narrative is blurred if not removed.
     \subsection{The Reality of the Virtual}
          
         In Slavoj Žižek's exploration of Lacanian psychoanalysis, he introduces the concept of "the reality of the virtual".
-        In this framework, the potency of punishment derives from its indeterminate nature. It is the uncertainty, the not-knowing, that gives rise to the fear of punishment. 
+        In this framework, the potency of punishment derives from its indeterminate nature \cite{Borretzen2012-tx}. It is the uncertainty, the not-knowing, that gives rise to the fear of punishment. 
        
         \par
         If a generalized eschatological infernal realm were meticulously described, it might transition from an anxiety-inducing abstraction to a tamed reality, clearly defined and consequently less formidable. It is the \textit{nebulous}, the undefined, that truly haunts us and ought to remain amorphous to preserve its capacity to instill dread. These threats linger best in the space of the virtual, potent and chilling in their ambiguity. In this vein, one might jest that Dante, in his vivid portrayal of the Inferno, may have unwittingly pilfered from us the more terrifying specters of the unknown; he gave us a map where perhaps we were better off with uncertainty.
@@ -237,8 +438,8 @@ While reading, try to guess, what all they refer to:
 
 \begin{description}
     \item[-] \textit{Emile Durkheim} regarded it as a system of beliefs and practices tied to the sacred, unifying adherents into a moral community.
-    \item[-] \textit{Rudolf Otto} spoke of the numinous, an encounter with the holy that is both fascinating and terrifying.
-    \item[-] \textit{Paul Tillich }identified it with the ultimate concern, a profound connection with absolute reality.
+    \item[-] \textit{Rudolf Otto} spoke of the numinous, an encounter with the holy that is both fascinating and terrifying \cite{Otto1996-in}.
+    \item[-] \textit{Paul Tillich} identified it with the ultimate concern, a profound connection with absolute reality.
     \item[-] \textit{Friedrich Schleiermacher} described it as a sense of absolute dependence, a communion with the universe.
     \item[-] \textit{Claude Lévi-Strauss} viewed it as part of a broader system of symbols intrinsic to human culture and cognition.
     \item[-] \textit{Karl Marx} famously criticized it as a palliative illusion.
