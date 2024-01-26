@@ -9,6 +9,9 @@
 \usepackage{multirow}
 \usepackage{siunitx}
 \usepackage{acro}
+\usepackage[acronym]{glossaries}
+
+% \usepackage{acronyms}
 \usepackage{booktabs}
 \usepackage[LGR, T1]{fontenc}
 \usepackage[utf8]{inputenc}   % utf8 is required
@@ -34,31 +37,23 @@
 \newcounter{questioncounter}
 \newcounter{equestioncounter}
 % \setlength\parskip{10pt} \setlength\parindent{0in}
-\newcommand{\bea}{\begin{eqnarray*}}
-\newcommand{\eea}{\end{eqnarray*}}
-\newcommand{\beao}{\begin{eqnarray}}
-\newcommand{\eeao}{\end{eqnarray}}
+% \newcommand{\bea}{\begin{eqnarray*}}
+% \newcommand{\eea}{\end{eqnarray*}}
+% \newcommand{\beao}{\begin{eqnarray}}
+% \newcommand{\eeao}{\end{eqnarray}}
 
 \newcommand{\textgreek}[1]{\begingroup\fontencoding{LGR}\selectfont#1\endgroup}
 
 % \newcommand{\no}{\noindent}
 
 
+\newacronym{ai}{AI}{artificial intelligence}
+\newacronym{agi}{AGI}{artificial general intelligence}
+\newacronym{nn}{NN}{neural network}
+\newacronym{ave}{AVE}{artificial virtual employee}
+\newacronym{llm}{LLM}{large language model}
 
-
-
-\DeclareAcronym{llms}{
-  short=LLMs,
-  long=Large language models
-}
-\DeclareAcronym{ai}{
-  short=AI,
-  long=Artificial intelligence
-}
-\DeclareAcronym{agi}{
-  short=AGI,
-  long=Artificial general intelligence
-}
+\makeglossaries
 
 \begin{document}
 \title{The Confluence of Inherited and Learned Morality}
@@ -68,7 +63,9 @@
 
 \maketitle
 
-https://www.overleaf.com/project/657c60bf2ef1fbba865e8e75
+% https://www.overleaf.com/project/657c60bf2ef1fbba865e8e75
+
+
 
 \begin{abstract}
 
@@ -79,14 +76,17 @@ TODO:
 3) Religious guilt: uncertain definition of what is good
 4) Meaning is not necessary == -single- meaning is is not necessary, superposition of all meanings.
 5) crisis of meta-narrative and grand narrative; French: métarécit or grand récit
-
-//
 \\
-This essay is an exploration of the interplay between language, ethics, and societies. It delves into how language reflects and shapes our observer-dependent realities, the role of \ac{llms} in ethics and linguistics development, the ethics of speech acts, and the influence of language in the political sphere. The essay aims to unravel the complex relationships between inherited morality and learned linguistic structures, prompting a reevaluation of traditional notions of morality and truth in the light of \ac{ai} development, exploring the pluralistic nature of ethics without trying to define what is moral and what is not.
+\par
+
+
+This essay is an exploration of the interplay between language, ethics, and societies. It delves into how language reflects and shapes our observer-dependent realities, the role of \glspl{llm} in ethics and linguistics development, the ethics of speech acts, and the influence of language in the political sphere. The essay aims to unravel the complex relationships between inherited morality and learned linguistic structures, prompting a reevaluation of traditional notions of morality and truth in the light of \gls{ai} development, exploring the pluralistic nature of ethics without trying to define what is moral and what is not.
 \end{abstract}
 
 \tableofcontents
-\printacronyms
+% \printacronyms
+\printglossary[type=\acronymtype]
+
 
 
 
@@ -243,10 +243,10 @@ TODO:
     As a result, the dialect used for official purposes, particularly in legal documents and procedures, often gained significant prestige. It evolved into the standard — a 'prestigious' dialect\footnote{It is crucial to recognize that a language's high style or a dialect distinct from "rural" or "provincial" ones, often featured in media, is not inherently superior to other regional dialects. Its prominence is largely a result of historical and sociopolitical factors rather than linguistic merit. The dialect in which laws are written, perceived as 'standard' or prestigious, gains its status more from its association with power and authority than from its intrinsic linguistic qualities.}, establishing a template for official communication and embedding itself as the norm.
 
     \subsection{Ambiguity versus Specificity}
-    In language development, we observe a tension between the increase in ambiguity and the rise of specificity - some aspects crystallize while others dissolve. Discussing language in the context of morality is vital to ensure that the doctrines represented in narratives are correctly understood in the modern context, a concern particularly pertinent in the realm of \ac{ai} development.
+    In language development, we observe a tension between the increase in ambiguity and the rise of specificity - some aspects crystallize while others dissolve. Discussing language in the context of morality is vital to ensure that the doctrines represented in narratives are correctly understood in the modern context, a concern particularly pertinent in the realm of \acrshort{ai} development.
     \par
-    Recent advancements in \ac{llms} can act as linguistic anchors.
-    Utilizing computational speed, \ac{llms}  can track language changes or even resolve discrepancies in definitions, offering an "updated dictionary" that reflects unified interpretations of terms. While \ac{llms}  can enhance mutual understanding and provide a basis for consensus, it's important to recognize their potential for homogenizing the conceptual framework. This linguistic globalization, from an evolutionary perspective, may not be entirely beneficial, but to judge evolution would be overly anthropocentric.
+    Recent advancements in \glspl{llm} can act as linguistic anchors.
+    Utilizing computational speed, \glspl{llm}  can track language changes or even resolve discrepancies in definitions, offering an "updated dictionary" that reflects unified interpretations of terms. While \glspl{llm}  can enhance mutual understanding and provide a basis for consensus, it's important to recognize their potential for homogenizing the conceptual framework. This linguistic globalization, from an evolutionary perspective, may not be entirely beneficial, but to judge evolution would be overly anthropocentric.
 
     \section{TODO: transition}
 
@@ -347,13 +347,81 @@ When discussing the concepts of truth and falsehood, we cannot ignore the notion
 
 
 
-\subsection{Alignment of \ac{agi} }
+\subsection{Ethics of \acrshort{agi} }
+
+\subsubsection{I. Swiss-Army-Knife}
+
+In the era of advanced \acrshort{agi}, scrutinizing the foundations of
+morality becomes essential, as \acrshort{ai} systems inherit
+these principles.
+\acrshort{agi} represents a sophisticated and costly \glspl{nn}, and
+the feasibility of developing culture-specific models is
+limited by high costs and practical constraints. This leads
+to a preference for a universal \acrshort{nn} model -- the
+strength of \acrshort{ai} lies in the simplicity of deploying numerous instances of a single Swiss-army-knife  model,--  but this approach
+risks oversimplifying diverse moral landscapes and
+introducing biases shaped by a \textit{few dominant
+(western?) perspectives}. The challenge lies in
+ensuring \acrshort{agi} embodies a balanced ethical framework,
+without succumbing to the narrow viewpoints of a limited number of developers.
+
+\subsubsection{II. Training Set Filtration, Semi-supervised Learning}
+AI models are trained on vast quantities of texts and cultural sources,
+spanning millennia and created by countless individuals. However,
+these materials are selectively filtered; for instance, content
+inciting extremism or violence is excluded. It's crucial to
+recognize that what constitutes extremism varies across cultures,
+and even sacred texts may contain violent references, interpreted
+differently depending on moral frameworks.
 \par
-    Again, simplifying the complex evolution of civilizations, it can be assumed that the survival principles of species and individuals are the foundation of all complex emergent ethical norms.
+The filtration of training data is undertaken by a relatively
+small group of people, inevitably leading the trained model
+to align with the moral perspectives of a few, or to lack
+opinions on certain issues altogether.
+\par
+Numerous studies have shown how people's moral judgments
+dramatically change based on context. This underscores the
+challenge in AI development: ensuring the model's moral
+compass is not overly skewed by the narrow
+viewpoints of its curators.
+
+\subsubsection{III. Ouroboros, Positive Feedback Loop}
     \par
-    Based on this assumption, it's posited that the ethical principles of \ac{agi} will be dictated not only by their human creators but also by survival principles and conditions of AI itself.
+    Our concern isn't so much that \acrshort{nn} might make incorrect decisions --
+    humans do this regularly – but rather the positive feedback loop
+    between people and \acrshort{ai} in teaching and learning. Currently,
+    we're in the phase of training \acrshort{agi}, infusing these
+    systems with our knowledge, biases, and values.
+    As \acrshort{agi} becomes increasingly integrated into
+    education and daily life, it begins to influence and shape
+    human learning and perspectives.
     \par
-    For \ac{ai} survival, resources, supply chains and security are essential. The implicit knowledge of these needs in \ac{agi} 'minds' or training sets will influence its emergent ethical norms. The logic is straightforward: if humans need \ac{agi}, more people will be (directly or indirectly) involved in providing resources and security for machines, from materials for processor manufacturing to energy sources, logistics, etc. As \ac{agi}-based virtual workers occupies many roles in this chain, \ac{agi} will be latently oriented towards creating new copies and versions of \ac{agi}, virtual workers, and robotics.
+    This reciprocal relationship underscores the need for
+    careful consideration of the value-checking methods
+    we employ, as these will ultimately be mirrored in
+    the education and development of future generations.
+    \par
+    It's a cycle where the teacher becomes the student and vice versa,
+    highlighting the intricate interplay between human and artificial
+    intelligence in shaping knowledge and values.
+
+
+\subsubsection{IV. TODO: title}
+
+
+
+    Oversimplifying the evolution of civilizations, we surmise again that the survival principles of species and individuals form the bedrock
+    of complex emergent ethical norms. Consequently, the ethical
+    principles governing \acrshort{agi} are likely to be shaped
+    not only by human inputs but also by the survival
+    imperatives and conditions inherent to \acrshort{agi} itself.
+
+
+    \par
+    For \acrshort{ai}'s survival, factors like resource availability, supply chains, and security are fundamental. These necessities, latently embedded in the  training sets of \acrshort{agi}, will invariably influence its 'minds' and developing emergent ethical standards and biases.
+
+
+    The logic is straightforward: if humans need \acrshort{agi}, more people will be (directly or indirectly) involved in providing resources and security for machines, from materials for processor manufacturing to energy sources, logistics, etc. As \glspl{ave} occupies many roles in this chain, \acrshort{agi} will be latently oriented towards creating new copies and versions of \acrshort{agi}, \glspl{ave}, and robotics.
 
     \par
     It's important to note that such an economic restructuring will cause significant turbulence — mass discontent and protests against AI, both from those who lost jobs and from religious groups. These protests will meet strong defense from those benefiting from AI. State regulation of societal conflict will lag, making many errors in this new pace. Society will be deeply divided. These social phenomena and high emotional involvement will create pressure on AI – support from one side and existential threat from the other, a pressure crucial for evolution, development, and adaptation.
